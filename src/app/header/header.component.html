@@ -1,0 +1,97 @@
+<!-- desktop header start here -->
+<header class="desktop-header" id="desktop-header">
+    <div class="custom-container">
+        <div class="custom-navbar">
+
+            <ul class="left-nav-list">
+                <div class="logo_div">
+                    <a class="navbar-brand" routerLink=""><img src="../../assets/images/brand-logo.png" alt=""></a>
+                </div>
+            </ul>
+
+            <div class="centeral-nav">
+                <div class="centeral-nav-box">
+                    <input type="text" placeholder="Search" class="form-control">
+                </div>
+            </div>
+
+            <ul class="right-nav-list" *ngIf="menuType === 'default'">
+
+                <li><a routerLink="seller-auth" class="navigation-link">Seller Auth</a></li>
+                <li><a routerLink="seller-home" class="navigation-link">Home</a></li>
+                <li><a routerLink="" class="navigation-link">login</a></li>
+                <li><a routerLink="" class="navigation-link">Cart(0)</a></li>
+            </ul>
+
+            <ul class="right-nav-list" *ngIf="menuType === 'seller'">
+
+                <li><a routerLink="seller-home" class="navigation-link">Product List</a></li>
+                <li><a routerLink="seller-add-product" class="navigation-link">Add Product</a></li>
+                <li><a routerLink="login" class="navigation-link" (click)="HandleLogout()">Logout</a></li>
+                <li><a routerLink="#" class="navigation-link">Cart(0)</a></li>
+                <li><a routerLink="#" class="navigation-link">{{sellerName}}</a></li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+<!-- desktop header end here -->
+
+<!-- mobile header start here -->
+<header class="mobile-header">
+    <div class="mobile-header-parent">
+        <div class="mobile-header-img">
+            <a routerLink=""><img src="../../assets/images/brand-logo.png" alt=""></a>
+        </div>
+        <div class="custom-toggle-icon">
+            <span class="fa fa-bars"></span>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-header-list">
+    <ul>
+        <li>
+            <a href="javascript:void(0)" class="custom-nav-link toggle-dropdown">
+                SHOP RVs
+                <span class="fa fa-plus"></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="custom-nav-link toggle-dropdown">
+                BRAND
+                <span class="fa fa-plus"></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="custom-nav-link toggle-dropdown">
+                SERVICES
+                <span class="fa fa-plus"></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="custom-nav-link toggle-dropdown">
+                RESOURCES
+                <span class="fa fa-plus"></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="custom-nav-link toggle-dropdown">
+                DEALER INFO
+                <span class="fa fa-plus"></span>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="custom-nav-link">CONTACT</a>
+        </li>
+
+        <li class="custom-nav-link"><a href="tel:+715-424-2526" class="mobile-header-number">715-424-2526</a></li>
+    </ul>
+</div>
+
+<!-- mobile header end here -->

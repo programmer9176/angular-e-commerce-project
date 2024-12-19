@@ -1,0 +1,24 @@
+<div class="auth-box mt-5" *ngIf="showLogin">
+    <h2 class="form-heading">Signup</h2>
+    <form class="auth-form" [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value)">
+        <input type="text" class="form-input" formControlName="name" placeholder="Enter name">
+        <input type="text" class="form-input" formControlName="email" placeholder="Enter email">
+        <input type="password" class="form-input" formControlName="password" placeholder="Enter password">
+        <button class="form-btn btn btn-primary">SignUp</button>
+        <p class="toggle-link" (click)="openLogin()">Already have an account? Login Here</p>
+    </form>
+</div>
+
+
+<div class="auth-box mt-5" *ngIf="!showLogin">
+    <h2 class="form-heading">login</h2>
+
+    <p class="errorMsg">{{errorMsg}}</p>
+
+    <form class="auth-form" [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+        <input type="text" class="form-input" formControlName="email" placeholder="Enter email">
+        <input type="password" class="form-input" formControlName="password" placeholder="Enter password">
+        <button class="form-btn btn btn-primary">login</button>
+        <p class="toggle-link" (click)="openSignup()">Don't have an account? SignUp Here</p>
+    </form>
+</div>
