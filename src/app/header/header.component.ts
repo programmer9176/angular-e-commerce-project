@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
 
     this.router.events.subscribe((val: any) => {
-      console.log(val.url)
+      // console.log(val.url)
 
       if (val.url) {
 
