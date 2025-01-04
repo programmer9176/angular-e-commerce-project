@@ -17,5 +17,6 @@ export interface productInterface {
     "p_category": string,
     "p_color": string,
     "p_description": string,
-    "img_url": string
+    "img_url": string,
+    "id": number
 }

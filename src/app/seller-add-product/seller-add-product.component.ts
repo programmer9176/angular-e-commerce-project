@@ -28,7 +28,8 @@ export class SellerAddProductComponent implements OnInit {
     console.log(data)
 
     this.productService.addProdctData(data).subscribe((result)=>{
-      console.log(result)
+      console.log(result);
+      this.addProductForm.reset();
     })
   }
 
