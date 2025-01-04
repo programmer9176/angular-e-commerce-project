@@ -11,7 +11,7 @@
                         <th scope="col">Color</th>
                         <th scope="col">Price</th>
                         <th scope="col">Decription</th>
-                        <th scope="col">Delete</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -22,7 +22,10 @@
                         <td>{{product.p_color}}</td>
                         <td>{{product.p_price}}</td>
                         <td>{{product.p_description}}</td>
-                        <td><span class="fa fa-trash" (click)="deleteProduct(product.id)"></span></td>
+                        <td>
+                            <span class="fa fa-trash me-4" (click)="deleteProduct(product.id)"></span>
+                            <span class="fa fa-edit" routerLink="/seller-update-product/{{product.id}}"></span>
+                        </td>
                     </tr>
                 </tbody>
             </table>

@@ -1,0 +1,20 @@
+<div class="auth-box mt-5">
+    <h2 class="form-heading">Update Product</h2>
+    <form class="auth-form" [formGroup]="updateProductForm" (ngSubmit)="updateProduct(updateProductForm.value)">
+
+        <input type="text" class="form-input" formControlName="p_name" placeholder="product name">
+
+        <input type="number" class="form-input" formControlName="p_price" placeholder="product price">
+
+        <input type="text" class="form-input" formControlName="p_color" placeholder="product color">
+
+        <input type="text" class="form-input" formControlName="p_category" placeholder="product category">
+
+        <input type="text" class="form-input" formControlName="img_url" placeholder="image-url">
+
+        <textarea name="" id="" rows="2" class="form-input" formControlName="p_description" placeholder="product description"></textarea>
+        
+        <button class="form-btn btn btn-primary">Update Product</button>
+
+    </form>
+</div>
