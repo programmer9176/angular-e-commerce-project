@@ -1,1 +1,20 @@
-<p>seller-add-product works!</p>
+<div class="auth-box mt-5">
+    <h2 class="form-heading">Add Product</h2>
+    <form class="auth-form" [formGroup]="addProductForm" (ngSubmit)="addProduct(addProductForm.value)">
+
+        <input type="text" class="form-input" formControlName="p_name" placeholder="product name">
+
+        <input type="number" class="form-input" formControlName="p_price" placeholder="product price">
+
+        <input type="text" class="form-input" formControlName="p_color" placeholder="product color">
+
+        <input type="text" class="form-input" formControlName="p_category" placeholder="product category">
+
+        <input type="text" class="form-input" formControlName="img_url" placeholder="image-url">
+
+        <textarea name="" id="" rows="2" class="form-input" formControlName="p_description" placeholder="product description"></textarea>
+        
+        <button class="form-btn btn btn-primary">Add Product</button>
+
+    </form>
+</div>

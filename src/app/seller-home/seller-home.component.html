@@ -1,1 +1,26 @@
-<p>seller-home works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-10 m-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of productList">
+                        <td class="product-img"><img src="{{product.img_url}}" alt=""></td>
+                        <td>{{product.p_name}}</td>
+                        <td>{{product.p_category}}</td>
+                        <td>{{product.p_color}}</td>
+                        <td>{{product.p_price}}</td>
+                        <td>{{product.p_description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

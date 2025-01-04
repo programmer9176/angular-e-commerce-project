@@ -6,5 +6,34 @@
       "email": "admin@gmail.com",
       "password": "0000"
     }
+  ],
+  "product": [
+    {
+      "id": "9343",
+      "p_name": "Aliquid ut sapiente ",
+      "p_category": "Asperiores id nihil ",
+      "p_price": 76,
+      "p_color": "Voluptatem vero inci",
+      "img_url": "https://www.top10mobileshop.com/images/top10mobiles.com/thumbnail/product/2024/08/820503826202408140846.jpg",
+      "p_description": "Proident molestiae "
+    },
+    {
+      "id": "b62e",
+      "p_name": "Rem tenetur esse sit",
+      "p_category": "Quia maxime officia ",
+      "p_price": 71,
+      "p_color": "Minim labore corrupt",
+      "img_url": "https://www.top10mobileshop.com/images/top10mobiles.com/thumbnail/product/2024/08/820503826202408140846.jpg",
+      "p_description": "Sint amet itaque ut"
+    },
+    {
+      "id": "a94e",
+      "p_name": "Doloremque assumenda",
+      "p_category": "Consectetur quod es",
+      "p_price": 2,
+      "p_color": "Est eum quia vitae q",
+      "img_url": "https://www.top10mobileshop.com/images/top10mobiles.com/thumbnail/product/2024/08/820503826202408140846.jpg",
+      "p_description": "Nulla facere labore "
+    }
   ]
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormControlName, FormGroup, Validators } from '@angular/forms';
 import { SellerServiceService } from '../services/seller-service.service'
 import { Router } from '@angular/router';
-import { LoginInterface, SignupInterface } from '../models/signup-interface';
+import { LoginInterface, SignupInterface } from '../models/models';
 
 @Component({
   selector: 'app-seller-auth',
