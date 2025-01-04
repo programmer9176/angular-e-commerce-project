@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { ProductServiceService } from '../services/product-service.service';
+import { productInterface } from '../models/models';
 
 @Component({
   selector: 'app-seller-update-product',
@@ -8,9 +11,17 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class SellerUpdateProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private service: ProductServiceService) { }
+
+  productData: undefined | productInterface
+  formsMsg: undefined | string
 
   ngOnInit(): void {
+    let productId = this.route.snapshot.paramMap.get('id');
+    productId && this.service.singleProductData(productId).subscribe((result) => {
+      console.log(result)
+      this.productData = result
+    })
   }
 
   updateProductForm = new FormGroup({
@@ -23,6 +34,21 @@ export class SellerUpdateProductComponent implements OnInit {
   })
 
   updateProduct(data: any) {
+    console.log(data);
+
+    if (this.productData) {
+      data.id = this.productData.id
+    }
+
+    this.service.updateProductData(data).subscribe((result) => {
+      console.log(result);
+      this.formsMsg = "Product updated successfully"
+    })
+
+    setTimeout(() => {
+      this.formsMsg = undefined
+    }, 3000)
+
 
   }
 }
