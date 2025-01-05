@@ -27,7 +27,10 @@ export class ProductServiceService {
   }
 
   updateProductData(data: productInterface) {
-    console.log(data)
     return this.http.put(`http://localhost:3000/product/${data.id}`, data);
+  }
+
+  trendyProducs() {
+    return this.http.get<productInterface[]>("http://localhost:3000/product?_limit=8");
   }
 }
