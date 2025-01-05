@@ -1,0 +1,32 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-lg-10 m-auto">
+            <div class="row">
+                <div class="col-md-3 mb-4" *ngFor="let item of searchProduct">
+                    <div class="card shadow">
+                        <div class="card-img">
+                            <img src="{{item.img_url}}" alt="">
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center my-3">{{item.p_name}}</h5>
+                            <div class="price-sec my-2">
+                                <span>Price</span>
+                                <span>{{item.p_price}}</span>
+                            </div>
+                            <div class="price-sec">
+                                <span>Color</span>
+                                <span>{{item.p_color}}</span>
+                            </div>
+                            <div class="product-btn-sec">
+                                <a routerLink="">View Details</a>
+                                <a routerLink="">Add To Cart</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

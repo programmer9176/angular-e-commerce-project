@@ -163,3 +163,40 @@ a:hover {
 .product-btn-sec a {
     color: white;
 }
+
+.centeral-nav-box {
+    position: relative;
+}
+
+.search-results {
+    position: absolute !important;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: auto !important;
+    background: white;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: left;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 10px;
+}
+
+.search-results li {
+    color: black;
+    list-style: none;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box button {
+    color: white;
+    height: 45px;
+    background: green;
+    border: 2px solid green;
+}

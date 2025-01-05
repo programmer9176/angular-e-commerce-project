@@ -9,49 +9,49 @@
   ],
   "product": [
     {
-      "p_name": "Exercitation ex ea d",
-      "p_category": "In enim facere repel",
-      "p_price": 500,
-      "p_color": "Enim soluta modi dol",
+      "p_name": "Meal box ",
+      "p_category": "food",
+      "p_price": "500",
+      "p_color": "Red & white",
       "img_url": "https://www.jiomart.com/images/product/original/rvyvxnsjay/milton-red-black-plastic-futron-electric-lunch-box-360-ml-product-images-orvyvxnsjay-p603415653-0-202307311846.jpg",
-      "p_description": "A quo ad aut culpa ",
+      "p_description": "A beautiful meal box set",
       "id": "2935"
     },
     {
-      "id": "73f1",
-      "p_name": "Nihil voluptatem Al",
-      "p_category": "Soluta qui commodo u",
-      "p_price": 2,
-      "p_color": "Quos quisquam elit ",
+      "p_name": "Poreless Liquid Foundation",
+      "p_category": "cosmetics",
+      "p_price": "2",
+      "p_color": "white",
       "img_url": "https://www.bointernational.net/wp-content/uploads/2024/02/Cosmetics-Range-600x300.jpg",
-      "p_description": "Facere quo ut cupidi"
+      "p_description": "Want the perfect foundation fit? Its all about matching skin tone and texture. Mattifying liquid formula ideal for normal to oily skin. Normal or oily skin gets evened out and perfected with Fit Me Matte + Poreless foundation",
+      "id": "73f1"
     },
     {
-      "id": "59ba",
-      "p_name": "Labore optio qui fu",
-      "p_category": "Quo omnis repudianda",
-      "p_price": 34,
-      "p_color": "Sunt quia nemo ea d",
+      "p_name": "Shampoo raw material",
+      "p_category": "cosmetics",
+      "p_price": "34",
+      "p_color": "white",
       "img_url": "https://st3.depositphotos.com/1177973/12669/i/450/depositphotos_126693854-stock-photo-set-of-body-care-products.jpg",
-      "p_description": "Officia excepturi et"
+      "p_description": "best raw material shampoo",
+      "id": "59ba"
     },
     {
-      "id": "c771",
-      "p_name": "Veritatis a nobis ar",
-      "p_category": "Velit fugiat quide",
-      "p_price": 27,
-      "p_color": "Aut error sint odit",
+      "p_name": "Running Kicks for Men",
+      "p_category": "shoes",
+      "p_price": "27",
+      "p_color": "black",
       "img_url": "https://servis.pk/cdn/shop/files/M-CH-0100288-Blue_6.jpg?v=1735750470&width=533",
-      "p_description": "Optio eligendi cons"
+      "p_description": "Stay stylish with these evergreen, trendy shoes that perfectly match your everyday needs.",
+      "id": "c771"
     },
     {
-      "id": "fe4a",
-      "p_name": "Enim et sunt odio o",
-      "p_category": "Est velit aspernat",
-      "p_price": 52,
-      "p_color": "Molestiae aut delect",
+      "p_name": "Headphones ",
+      "p_category": "electronics",
+      "p_price": "52",
+      "p_color": "black",
       "img_url": "https://www.laptab.com.pk/theme/images/product/105/headphones-street-by-50.jpg",
-      "p_description": "Maiores sint placea"
+      "p_description": "best headphones for all devices",
+      "id": "fe4a"
     },
     {
       "id": "4ee9",
@@ -88,6 +88,15 @@
       "p_color": "Accusamus quos nostr",
       "img_url": "https://www.jiomart.com/images/product/original/rvyvxnsjay/milton-red-black-plastic-futron-electric-lunch-box-360-ml-product-images-orvyvxnsjay-p603415653-0-202307311846.jpg",
       "p_description": "Dolore perferendis s"
+    },
+    {
+      "id": "8d12",
+      "p_name": "Alias nihil aut sunt",
+      "p_category": "Dolores non eius ut ",
+      "p_price": 51,
+      "p_color": "Voluptatem Rerum co",
+      "img_url": "https://majesticchef.pk/cdn/shop/files/4_1_3f8a31f3-5b44-463f-8783-78abcd8363a6.jpg?v=1720782888",
+      "p_description": "Et voluptas voluptas"
     }
   ]
 }

@@ -5,13 +5,22 @@
 
             <ul class="left-nav-list">
                 <div class="logo_div">
-                    <a class="navbar-brand" routerLink=""><img src="../../assets/images/brand-logo.png" alt=""></a>
+                    <a class="navbar-brand" routerLink="">
+                        <img src="../../assets/images/brand-logo.png" alt="">
+                    </a>
                 </div>
             </ul>
 
             <div class="centeral-nav">
                 <div class="centeral-nav-box">
-                    <input type="text" placeholder="Search" class="form-control">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search" #search class="form-control"
+                            (keyup)="searchProducts($event)" (blur)="hideSearch()">
+                        <button (click)="searchresult(search.value)">Search</button>
+                    </div>
+                    <ul class="search-results" *ngIf="productSearch">
+                        <li *ngFor="let item of productSearch">{{item.p_name}}</li>
+                    </ul>
                 </div>
             </div>
 
